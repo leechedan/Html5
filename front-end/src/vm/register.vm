@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <title>#if($pageTitle)$pageTitle #else 新博页面 #end</title>
+    #parse('common/top.vm')
+    <link rel="stylesheet" href="/static/css/base.css"/>
+    <link rel="stylesheet" href="/static/css/register.css"/>
+</head>
+<body class="nb88">
+    #parse('common/old.vm')
+
+
+    #parse('common/header.vm')
+    <div class="register-con">
+        <div class="register-main">
+            <div class="register-title">注册账户</div>
+            <div class="clearfix">
+                <div class="reg-text-con">
+                    <div class="reg-text-bg"></div>
+                    <div class="reg-text-title">会员福利一览</div>
+                    <div class="reg-item">
+                        <span>·</span>为了账户安全，验证您的个人信息，提款100元后即可获得红利**
+                    </div>
+                    <div class="reg-item">
+                        <span>·</span>快捷支付立即到账，多种存款方式选择，极速提款！
+                    </div>
+                    <div class="reg-item">
+                        <span>·</span>高达2,888人民币的首存红利，5大老虎机平台，立即获得！
+                    </div>
+                    <div class="reg-item">
+                        <span>·</span>加入贵宾厅VIP俱乐部，尊享属于您的特权及奖励积分！
+                    </div>
+                    <div class="reg-item">
+                        <span>·</span>多个游戏平台，提供更好更全面的盘口，智能手机网和手机客户端，欢乐尽在掌中！
+                    </div>
+                </div>
+                <div class="reg-form">
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>账户名：</label>
+                        <div>
+                            <input type="text" class="reg-input">
+                        </div>
+                        <label class="reg-help">用户名由6~12位小写英文a~z或数字组成</label>
+                    </div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>设置密码：</label>
+                        <div>
+                            <input type="text" class="reg-input">
+                        </div>
+                        <label class="reg-help">密码长度6～20位a-z,0-9,只允许以下特殊字符@*_-.,;&</label>
+                    </div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>确认密码：</label>
+                        <div>
+                            <input type="text" class="reg-input">
+                        </div>
+                        <label class="reg-help">再次输入密码</label>
+                    </div>
+                    <div class="reg-spa"></div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>电子邮箱：</label>
+                        <div>
+                            <input type="text" class="reg-input">
+                        </div>
+                        <label class="reg-help">您的常用电子邮箱</label>
+                    </div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>电话号码：</label>
+                        <div>
+                            <span class="reg-phone-plus">+</span>
+                            <select class="reg-phone-select">
+                                <option>86</option>
+                            </select>
+                            <input type="text" class="reg-input reg-phone-input">
+                        </div>
+                    </div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>真实姓名：</label>
+                        <div>
+                            <input type="text" class="reg-input">
+                        </div>
+                        <label class="reg-help">必须与提款姓名一致才能提款</label>
+                    </div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>出生日期：</label>
+                        <div>
+                            <select class="reg-date reg-date-year">
+                                <option>1997</option>
+                            </select>
+                            <select class="reg-date reg-date-month">
+                                <option>1月</option>
+                            </select>
+                            <select class="reg-date reg-date-day">
+                                <option>1日</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reg-spa"></div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>货币：</label>
+                        <div>
+                            <select class="reg-currency">
+                                <option>人民币</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>合营伙伴ID：</label>
+                        <div>
+                            <input type="text" class="reg-input">
+                        </div>
+                    </div>
+                    <div class="reg-group clearfix">
+                        <label class="reg-label"><span>*</span>验证码：</label>
+                        <div>
+                            <input type="text" class="reg-input reg-input-code">
+                            <img class="reg-code-img" src="/static/imgs/temp_code.jpg" width="60" height="20">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="reg-agree">
+                            <input type="checkbox">
+                            我确认我的法定年龄，已阅读并愿意遵守虎牌相关的规则与条款和隐私策略。
+                        </label>
+                    </div>
+                    <div>
+                        <button type="button" class="reg-btn">注册帐号</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    #parse('common/footer.vm')
+
+
+    #parse('common/script.vm')
+
+</body>
+</html>

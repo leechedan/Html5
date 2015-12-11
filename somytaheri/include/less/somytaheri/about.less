@@ -1,0 +1,33 @@
+#about {
+  .textContent {
+    .fa-heart {
+      color: lighten(@colorAbout, 20%);
+    }
+    ul {
+      text-align: center;
+      margin-top: 10px;
+      li {
+        display: inline-block;
+        width: 40px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        img {
+          .size(40px,40px);
+        }
+      }
+    }
+  }
+  @media (min-width: @min-small) {
+    .textContent {
+      ul {
+        li {
+          width: 50px;
+          img {
+            .size(50px,50px);
+          }
+        }
+      }
+    }
+  }
+}

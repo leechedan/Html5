@@ -1,0 +1,75 @@
+#menu {
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  z-index: 10;
+  .translate(0,-50%);
+  .navStyle {
+    #navHome, #navProfile, #navAbout, #navContact {
+      position: relative;
+    }
+    .navHover {
+      position: absolute;
+      left: 30px;
+      top: 0px;
+      font-size: 12pt;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      .transition(opacity 0.4s ease-in-out)
+    }
+    a:hover {
+      .navHover {
+        opacity: 1;
+        filter: alpha(opacity=1);
+        .transition(opacity 0.4s ease-in-out)
+      }
+    }
+    .circleOuter {
+      .border-radius(50%);
+      background-color: rgba(250,250,250,0.5);
+      width: 25px;
+      height: 25px;
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .circleInner {
+      .border-radius(50%);
+      background-color: @white;
+      width: 15px;
+      height: 15px;
+      display: block;
+      .translate(30%,30%);
+    }
+    .active {
+      .circleOuter {
+        color: #009900;
+      }
+
+    }
+  }
+}
+@media (min-width: @min-small) {
+  #menu {
+    left: 5px;
+    .navStyle {
+      .navHover {
+        font-size: 18pt;
+        left: 40px;
+      }
+      .circleOuter {
+        .border-radius(50%);
+        width: 35px;
+        height: 35px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .circleInner {
+        .border-radius(50%);
+        width: 25px;
+        height: 25px;
+        .translate(20%, 20%);
+      }
+    }
+  }
+}
